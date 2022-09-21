@@ -19,10 +19,17 @@ public class Mars {
             System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");
         }
 
-        LandingCheck(100);
+        boolean landing = LandingCheck(3);
+        new GuessingGame();
 
     }
-
+    /**Function name: Landing Check-used to navigate landing of the ship
+    *   @param loops (int)
+     * @return landed? boolean
+     * Inside the function:
+     *  1. return instruction based on divisibility of number in loop by 3 and or 5
+     *  2. return false after Landing
+     *   */
     public static boolean LandingCheck(int loops) throws InterruptedException {
         for (int i = 0; i < loops; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
@@ -39,5 +46,6 @@ public class Mars {
         System.out.println("Landed");
         return false;
     }
+
 
 }
