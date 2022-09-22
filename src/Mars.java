@@ -21,6 +21,7 @@ public class Mars {
 
         boolean landing = LandingCheck(3);
         new GuessingGame();
+        new MarsExpedition();
 
     }
     /**Function name: Landing Check-used to navigate landing of the ship
