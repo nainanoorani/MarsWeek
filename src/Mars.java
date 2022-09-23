@@ -19,9 +19,10 @@ public class Mars {
             System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");
         }
 
-        boolean landing = LandingCheck(3);
-        new GuessingGame();
-        new MarsExpedition();
+          boolean landing = LandingCheck(3);
+          new GuessingGame();
+          new MarsExpedition();
+          new FindingsLists();
 
     }
     /**Function name: Landing Check-used to navigate landing of the ship
